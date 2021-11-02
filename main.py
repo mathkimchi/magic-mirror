@@ -4,19 +4,18 @@ import time
 
 #while(True):
 file1 = open('peddiemenu.txt', 'w')
-file2 = open('/peddiescore.txt', 'w')
+file2 = open('peddiescore.txt', 'w')
 
 #get data
-data = requests.get('https://peddie-day.herokuapp.com')
+data = requests.get("https://www.peddie.org/athletics/traditions/blair-rivalry/peddie-blair-day-2021")
 
 #load data into bs4
 soup = BeautifulSoup(data.text, 'html.parser')
 
-menu = soup.find('div', {'class':'text-center'})
-menu2 = soup.find('div', {'class':'text-center'}).get_text("\n")
 
-print(menu2 + '\n')
-file1.write(menu2)
+menu2 = soup.find('div', {'class':'fsAthleticsRecap'}).get_text()
+print(menu2)
+file1.write(str(menu2))
 file1.close()
 
     #time.sleep(7200) 
