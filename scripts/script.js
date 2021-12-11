@@ -1,7 +1,3 @@
-import pystuff from '/node.js'
-const AnyList = require('anylist');
-
-const any = new AnyList({email: 'tothienbao6a@gmail.com', password: 'tothienbao2004'});
 function startTime() {
     const today = new Date();
     let h = today.getHours();
@@ -16,6 +12,8 @@ function startTime() {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
   }
-  console.log(pystuff.toString());
 
-  console.log(window.location.href);
+  fetch('C:/Users/advai/Desktop/projects/Magic-Mirror/peddiemenu.txt')
+  .then(response => response.text())
+  .then(text => console.log(text))
+  // outputs the content of the text file

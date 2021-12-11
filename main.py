@@ -14,6 +14,7 @@ soup = BeautifulSoup(data.text, 'html.parser')
 
 
 menu2 = soup.find('div', {'class':'fsAthleticsRecap'}).get_text()
+
 print(menu2)
 file1.write(str(menu2))
 file1.close()
