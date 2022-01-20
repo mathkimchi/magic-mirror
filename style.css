@@ -38,6 +38,7 @@ h2 {
   color: #cc9800;
   font-weight: bold;
   font-size: 55px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3 {
   color:#cc9800;
@@ -119,7 +120,7 @@ h3 {
 
 .currentblock{
   color:white;
-  font-size: 10px;
+  font-size:15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
