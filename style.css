@@ -50,7 +50,7 @@ h3 {
 .first-column {
   width: 25%;
   padding-top:30px;
-  padding-left:100px;
+  padding-left:120px;
   float: left;
   text-align: center;
 
@@ -98,7 +98,7 @@ h3 {
   .item3 {
     grid-column: 3;
     grid-row: 1 / span 2;
-    padding-right:125px;
+    padding-right:180px;
   }
   .calligram{
     max-width: 400px;
