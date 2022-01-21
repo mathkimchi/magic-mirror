@@ -45,7 +45,9 @@ h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 20px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     text-decoration: underline;
 }
 .first-column {
@@ -123,4 +125,10 @@ h3 {
   font-size:15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
+}
+.menu{
+  color:white;
+  font-size:8.8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-flex;
 }
