@@ -20,7 +20,8 @@ def findGame(textFile) :
             startTimeString2=startTimeString[6:8]
             if startTimeString1 == todayMonth and startTimeString2 == todayDay:
                 menu=component.get('summary')
-                menu2=component.get('location')   
+                menu2=component.get('location') 
+
                 
                 if menu != None and menu2 != None:
                     file1.write(menu)
@@ -35,6 +36,7 @@ def findGame(textFile) :
             else:
                 menu=''
                 file1.write(menu)
+         
     g.close()
 findGame('team_155_gmt.ics')
 findGame('team_156_gmt.ics')
