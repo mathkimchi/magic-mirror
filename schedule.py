@@ -5,10 +5,20 @@ file = open("C:/Users/agupta-22/Magic-Mirror/schedule.txt", "w")
 weekday=datetime.today().strftime('%A')
 
 time = datetime.now().strftime("%H:%M")
-print(time)
+time2 = datetime.now().strftime("%I:%M")
 headings=[]
-headings= (time+'\t\tCurrent Block: ')
-file.write(headings)
+if(time<="12:00"):
+     headings= (time)
+     headings=headings.replace('0','')
+     file.write(headings + ' AM   ')                                      
+     file.write('Current Block: ')
+     print(time)
+elif(time>'12:00'):
+     headings= (time2)
+     headings=headings.replace('0','')
+     file.write(headings + ' PM \n')
+     file.write('Current Block: ')
+     print(time2)
 if(time >= "8:00" and time <="8:50" and weekday == "Monday"):
   file.write("A")
 elif(time >= "9:00" and time <="10:15" and weekday == "Monday"):

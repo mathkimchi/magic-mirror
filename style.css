@@ -144,9 +144,9 @@ h4 {
 
 .currentblock{
   color:white;
-  font-size:15px;
+  font-size:12px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  display: inline-flex;
 }
 .menu{
   color:white;
