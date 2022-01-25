@@ -1,54 +1,31 @@
-# import calendar
-# from bs4 import BeautifulSoup
-# import requests 
-# import time
-
-# #while(True):
-# file1 = open('games2.txt', 'w')
-# file2 = open('games2.txt', 'w')
-
-# #get data
-# data = requests.get('https://www.peddie.org/athletics/schedules')
-
-# #load data into bs4
-# soup = BeautifulSoup(data.text, 'html.parser')
-# game1 = soup.find('div', {'class':'fsEventTable fsElementTable'})
-# game2 = soup.find('div', {'class':'fsTitle'}).get_text("\n")
-
-# print(game2 + '\n')
-# file1.write(game2)
-# file2.write(game2)
-# file1.close()
-# file2.close()
-# ---------------------------------------------------------------------------
-import requests
+# importing the libraries
 from bs4 import BeautifulSoup
-import pandas as pd
+import requests
 
-page = requests.get('https://www.peddie.org/athletics/schedules')
+file1 = open('C:/Users/agupta-22/Magic-Mirror/games2.txt', 'w')
+url="https://www.peddie.org/athletics/schedules"
 
-soup = BeautifulSoup(page.text, 'lxml')
+# Make a GET request to fetch the raw HTML content
+html_content = requests.get(url).text
 
-
-table1 = soup.find('table', id='fsEventTable fsElementTable')
-
-
-headers = []
-for i in table1.find_all('th'):
- title = i.text
- headers.append(title)
-
-print(headers)
-#  mydata = pd.DataFrame(columns = headers)
-#  for j in table1.find_all('tr')[1:]:row_data = j.find_all('t')
-# row = [i.text for i in row_data]
-# length = len(mydata)
-# mydata.loc[length] = row
-
-# mydata.drop(mydata.index[0:7], inplace=True)
-# mydata.drop(mydata.index[222:229], inplace=True)
-# mydata.reset_index(inplace=True, drop=True)
-# mydata.drop('#', inplace=True, axis=1)
-# mydata.to_csv('athletics.csv', index=False)
-# mydata2 = pd.read_csv('athletics.csv')
-# ------------------------------------------------------------
+# Parse the html content
+soup = BeautifulSoup(html_content, "lxml")
+headings=[]
+headings= soup.table.text.replace('\n', ' ').strip()
+headings=headings.replace('Team Opponent Date Time Advantage Details Status', '').strip()
+headings=headings.replace('      	 			', '\n').strip()
+headings=headings.replace('CANCELLED     	 			', '').strip()
+headings=headings.replace('Details', '\n').strip()
+headings=headings.replace('      ', '  ').strip()
+headings=headings.replace('					 	 			', '').strip()
+headings=headings.replace(' Load More', '').strip()
+headings=headings.replace('   ', '').strip()
+headings=headings.replace('sv', 's  v').strip()
+headings=headings.replace('.', '.  ').strip()
+headings=headings.replace(' 						 	 			', '  ').strip()
+headings=headings.replace('	 			', '  ').strip()
+headings=headings.replace(' 							Home', '  Home').strip()
+headings=headings.replace(' 							Away', '  Away').strip()
+headings=headings.replace('CHANGED', '\nChanged').strip()
+file1.write(headings)
+			
