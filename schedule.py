@@ -6,7 +6,9 @@ weekday=datetime.today().strftime('%A')
 
 time = datetime.now().strftime("%H:%M")
 print(time)
-file.write("Current Block: ")
+headings=[]
+headings= (time+'\t\tCurrent Block: ')
+file.write(headings)
 if(time >= "8:00" and time <="8:50" and weekday == "Monday"):
   file.write("A")
 elif(time >= "9:00" and time <="10:15" and weekday == "Monday"):
