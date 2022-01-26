@@ -18,6 +18,7 @@ def get_weather_data(url):
     soup = bs(html.text, "html.parser")
 
     result = {}
+    result['weather_now'] = soup.find("span", attrs={"id": "wob_dc"}).text
     result["temp_now"] = soup.find("span", attrs={"id": "wob_tm"}).text
     return result
 
@@ -42,4 +43,5 @@ if __name__ == "__main__":
     URL += region
     # get data
     data = get_weather_data(URL)
+    file.write(f"Currently: {data['weather_now']}\n")
     file.write(f"Temperature now: {data['temp_now']}")

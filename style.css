@@ -174,9 +174,9 @@ h4 {
   font-size:12px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: inline-flex;
-  text-align: right !important;
+  text-align: center ;
   vertical-align: bottom;
-  padding-left:150px;
+  padding-left:100px;
 }
 .counter{
   color:white;

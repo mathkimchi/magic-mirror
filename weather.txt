@@ -1,1 +1,2 @@
-Temperature now: 26
+Currently: Clear
+Temperature now: 25
