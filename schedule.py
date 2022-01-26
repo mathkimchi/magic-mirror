@@ -3,10 +3,10 @@ from datetime import datetime
 
 file = open("C:/Users/agupta-22/Magic-Mirror/schedule.txt", "w")
 
-time2 = datetime.now().strftime("%H:%M")
-time = datetime.now().strftime("%I:%M")
+time = datetime.now().strftime("%H:%M")
+time2 = datetime.now().strftime("%I:%M")
 headings = []
-headings = time
+headings = time2
 headings = headings.replace("01:", "1:")
 headings = headings.replace("02:", "2:")
 headings = headings.replace("03:", "3:")
@@ -16,10 +16,10 @@ headings = headings.replace("06:", "6:")
 headings = headings.replace("07:", "7:")
 headings = headings.replace("08:", "8:")
 headings = headings.replace("09:", "9:")
-if time2 < "12:00":
-    file.write(headings + " AM  \n")
+if time < "12:00":
+    file.write(headings + " AM \n")
     
-elif time2 >= "12:00":
+elif time >= "12:00":
     file.write(headings + " PM \n")
 weekday = datetime.today().strftime("%A")
 print (time)
