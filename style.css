@@ -55,7 +55,7 @@ h4 {
   color:#cc9800;
   font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
@@ -177,4 +177,12 @@ h4 {
   text-align: right !important;
   vertical-align: bottom;
   padding-left:150px;
+}
+.counter{
+  color:white;
+  font-size:17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: top;
 }
