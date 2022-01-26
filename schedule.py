@@ -2,23 +2,28 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 file = open("C:/Users/agupta-22/Magic-Mirror/schedule.txt", "w")
-weekday = datetime.today().strftime("%A")
 
-time = datetime.now().strftime("%H:%M")
-time2 = datetime.now().strftime("%I:%M")
+time2 = datetime.now().strftime("%H:%M")
+time = datetime.now().strftime("%I:%M")
 headings = []
-if time <= "12:00":
-    headings = time
-    headings = headings.replace("0", "")
-    file.write(headings + " AM   ")
-    file.write("Current Block: ")
-    print(time)
-elif time > "12:00":
-    headings = time2
-    headings = headings.replace("0", "")
+headings = time
+headings = headings.replace("01:", "1:")
+headings = headings.replace("02:", "2:")
+headings = headings.replace("03:", "3:")
+headings = headings.replace("04:", "4:")
+headings = headings.replace("05:", "5:")
+headings = headings.replace("06:", "6:")
+headings = headings.replace("07:", "7:")
+headings = headings.replace("08:", "8:")
+headings = headings.replace("09:", "9:")
+if time2 < "12:00":
+    file.write(headings + " AM  \n")
+    
+elif time2 >= "12:00":
     file.write(headings + " PM \n")
-    file.write("Current Block: ")
-    print(time2)
+weekday = datetime.today().strftime("%A")
+print (time)
+file.write("Current Block: ")    
 if time >= "8:00" and time <= "8:50" and weekday == "Monday":
     file.write("A")
 elif time >= "9:00" and time <= "10:15" and weekday == "Monday":
