@@ -1,0 +1,1 @@
+Temperature now: 26
