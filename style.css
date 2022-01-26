@@ -86,7 +86,6 @@ h4 {
   .grid-item {
     color:#cc9800;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
     font-size: 20px;
   
   }
@@ -115,7 +114,8 @@ h4 {
     grid-column: 1 ;
     grid-row: 2;
     padding-left: 60x;
-    padding-top:10px;
+    padding-top:5px;
+    /* display:inline-flex; */
   }
   .item3 {
     grid-column: 3;
@@ -161,4 +161,12 @@ h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: inline-flex;
   padding-right:90px;
+}
+.calendar{
+  color:white;
+  font-size:7.5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-flex;
+  text-align: left;
+  vertical-align: top;
 }

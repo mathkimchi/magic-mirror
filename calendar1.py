@@ -16,6 +16,8 @@ nextMonth2=str(nextMonth)
 nextMonth2=nextMonth2[5:7]
 nextDay=str(nextMonth)
 nextDay=nextDay[8:]
+actualDay=  date.today().day - 15
+actualDay= str(actualDay) 
 todayMonth2=todayDate.strftime("%B")
 nextMonth3=nextMonth.strftime("%B")
 file1 = open('C:/Users/agupta-22/Magic-Mirror/calendar1.txt', 'w')
@@ -29,7 +31,7 @@ def findCalendar(textFile) :
             startTimeString1=startTimeString[4:6]
             startTimeString2=startTimeString[6:8]
             
-            if startTimeString1 == todayMonth and startTimeString2 >= nextDay or startTimeString1 == nextMonth2:
+            if startTimeString1 == todayMonth and startTimeString2 >= nextDay or startTimeString1 == nextMonth2 and startTimeString2 <= actualDay :
                 menu=component.get('summary')
                 menu2=component.get('location') 
 
@@ -42,7 +44,7 @@ def findCalendar(textFile) :
                     file1.write(menu2)
                     file1.write('\n')
                 elif menu!= None:
-                    file1.write(menu)
+                    file1.write(menu + ' - ')
                     if startTimeString1 == todayMonth:
                          file1.write('\t'+todayMonth2)
                     elif startTimeString1== nextMonth2:
