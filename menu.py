@@ -3,8 +3,8 @@ import requests
 import time
 
 #while(True):
-file1 = open('menu.txt', 'w')
-file2 = open('menu.txt', 'w')
+file1 = open('/var/www/PeddieBookExchange/Magic-Mirror/.asd', 'w')
+file2 = open('/var/www/PeddieBookExchange/Magic-Mirror/.asd', 'w')
 
 #get data
 data = requests.get('https://www.peddie.org/our-community/peddie-am-20')

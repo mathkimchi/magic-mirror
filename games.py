@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-file1 = open("C:/Users/agupta-22/Magic-Mirror/games.txt", "w")
+file1 = open("/var/www/PeddieBookExchange/Magic-Mirror/games.asd", "w")
 url = "https://www.peddie.org/athletics/schedules"
 
 # Make a GET request to fetch the raw HTML content
