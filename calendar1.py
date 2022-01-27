@@ -21,7 +21,7 @@ actualDay = date.today().day - 12
 actualDay = str(actualDay)
 todayMonth2 = todayDate.strftime("%B")
 nextMonth3 = nextMonth.strftime("%B")
-file1 = open("/var/www/PeddieBookExchange/Magic-Mirror/calendar1.asd", "w")
+file1 = open("C:/Users/agupta-22/Magic-Mirror/calendar1.txt", "w")
 
 
 def findCalendar(textFile):
