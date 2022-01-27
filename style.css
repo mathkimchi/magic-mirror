@@ -168,6 +168,7 @@ h4 {
   display: inline-flex;
   text-align: left;
   vertical-align: top;
+  padding-right: 57px;
 }
 .weather{
   color:#cc9800;
