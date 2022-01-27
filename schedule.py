@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 from datetime import datetime
 
 file = open("C:/Users/agupta-22/Magic-Mirror/schedule.txt", "w")
