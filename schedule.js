@@ -43,7 +43,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'MonE.jpg';
     }
     else {
-      imgElem.src = 'dailyschedule.jpg';
+      imgElem.src = 'dailyschedule.png';
     }
   }
   if (today == 2) {
@@ -84,7 +84,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'TuesB.png';
     }
     else {
-      imgElem.src = 'dailyschedule.jpg';
+      imgElem.src = 'dailyschedule.png';
     }
   }
   if (today == 3) {
@@ -116,7 +116,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'WedF.png';
     }
     else {
-      imgElem.src = 'dailyschedule.jpg';
+      imgElem.src = 'dailyschedule.png';
     }
   }
   if (today == 4) {
@@ -157,7 +157,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'ThursA.png';
     }
     else {
-      imgElem.src = 'dailyschedule.jpg';
+      imgElem.src = 'dailyschedule.png';
     }
   }
   if (today == 5) {
@@ -198,7 +198,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'FriC.png';
     }
     else {
-      imgElem.src = 'dailyschedule.jpg';
+      imgElem.src = 'dailyschedule.png';
     }
   }
   if (today == 6) {
@@ -215,10 +215,10 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'SatG.png';
     }
     else {
-      imgElem.src = 'dailyschedule.jpg';
+      imgElem.src = 'dailyschedule.png';
     }
   }
   if (today == 0) {
-    imgElem.src = 'dailyschedule.jpg';
+    imgElem.src = 'dailyschedule.png';
   }
 })();
