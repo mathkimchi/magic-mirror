@@ -1,6 +1,6 @@
 from datetime import datetime
 
-file = open("C:/Users/agupta-22/Magic-Mirror/counter.txt", "w")
+file = open("C:/Users/agupta-22/Magic-Mirror/counter.asd", "w")
 weekday = datetime.today().strftime("%A")
 
 time = datetime.now().strftime("%H:%M")

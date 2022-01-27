@@ -44,7 +44,7 @@ fetch("/weather.txt")
   })
   .then(text => document.getElementById("portfolio-code5").innerText = text + ' °F')
   .catch(errror => document.getElementById("portfolio-code5").innerText = "Unable to fetch portfolio, try again later")
-fetch("/counter.txt")
+fetch("/counter.asd")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
