@@ -43,7 +43,6 @@ if time >= "8:00" and time <= "8:50" and weekday == "Tuesday":
     file.write("F")
 elif time >= "9:00" and time <= "10:15" and weekday == "Tuesday":
     file.write("G")
-
 elif time >= "10:25" and time <= "11:25" and weekday == "Tuesday":
     file.write("A")
 elif time >= "11:25" and time <= "12:15" and weekday == "Tuesday":
@@ -63,9 +62,9 @@ elif time >= "10:25" and time <= "11:25" and weekday == "Wednesday":
     file.write("G")
 elif time >= "11:25" and time <= "12:15" and weekday == "Wednesday":
     file.write("Community Meeting")
-elif time > "12:15" and time <= "12:55" and weekday == "Wednesday":
+elif time > "12:15" and time < "12:55" and weekday == "Wednesday":
     file.write("Lunch")
-elif time > "12:55" and time <= "13:45" and weekday == "Wednesday":
+elif time >= "12:55" and time <= "13:45" and weekday == "Wednesday":
     file.write("F")
 
 if time >= "8:00" and time <= "8:50" and weekday == "Thursday":
@@ -97,7 +96,6 @@ elif time > "12:55" and time <= "14:10" and weekday == "Friday":
     file.write("A")
 elif time >= "14:20" and time <= "15:10" and weekday == "Friday":
     file.write("C")
-
 
 if time >= "8:00" and time <= "8:50" and weekday == "Saturday":
     file.write("E")

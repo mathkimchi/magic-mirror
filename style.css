@@ -148,14 +148,14 @@ h4 {
 .menu{
   color:white;
   font-size:8px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   display: inline-flex;
   text-align:left;
 }
 .athletics{
   color:white;
   font-size:7.5px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   display: inline-flex;
   padding-right:135px;
   text-align: left;
@@ -164,7 +164,7 @@ h4 {
 .calendar{
   color:white;
   font-size:7.5px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   display: inline-flex;
   text-align: left;
   vertical-align: top;
@@ -181,7 +181,7 @@ h4 {
 .counter{
   color:white;
   font-size:17px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   display: inline-flex;
   text-align: center;
   vertical-align: top;
