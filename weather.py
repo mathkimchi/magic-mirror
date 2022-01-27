@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 
 # https://www.thepythoncode.com/article/extract-weather-data-python
-file = open("C:/Users/agupta-22/Magic-Mirror/weather.txt", "w")
+file = open("/var/www/PeddieBookExchange/Magic-Mirror/weather.txt", "w")
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
 # US english
 LANGUAGE = "en-US,en;q=0.5"
