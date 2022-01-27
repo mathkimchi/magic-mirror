@@ -14,7 +14,7 @@ if time == "24:00":
 elif time != "24:00":
  count2=count
  count2 = str(count2)
- file.write(count2 +'\nDays Left!')
+ file.write(count2 +' Days Left!')
  if count == 0:
      count=365
 
