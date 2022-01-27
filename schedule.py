@@ -1,6 +1,6 @@
 from datetime import datetime
 
-file = open("/var/www/PeddieBookExchange/Magic-Mirror/schedule.asd", "w")
+file = open("C:/Users/agupta-22/Magic-Mirror/schedule.asd", "w")
 
 time = datetime.now().strftime("%H:%M")
 time2 = datetime.now().strftime("%I:%M")
