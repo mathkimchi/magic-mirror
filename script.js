@@ -54,3 +54,4 @@ fetch("/counter.txt")
   .then(text => document.getElementById("portfolio-code6").innerText = text)
   .catch(errror => document.getElementById("portfolio-code6").innerText = "Unable to fetch portfolio, try again later")
 
+
