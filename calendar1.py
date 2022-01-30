@@ -33,7 +33,6 @@ def findCalendar(textFile):
             startTimeString = startTime.decode("utf-8")
             startTimeString1 = startTimeString[4:6]
             startTimeString2 = startTimeString[6:8]
-
             if (
                 startTimeString1 == todayMonth
                 and startTimeString2 >= nextDay
@@ -58,7 +57,6 @@ def findCalendar(textFile):
                         file1.write("\t" + nextMonth3)
                     file1.write("\t" + startTimeString2)
                     file1.write("\n")
-                    file1.write("")
             else:
                 menu = ""
                 file1.write(menu)
