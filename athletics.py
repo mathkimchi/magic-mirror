@@ -7,26 +7,26 @@ import datetime
 from dateutil import relativedelta
 
 # Returns the current local date
-todayDate = date.today() 
+todayDate = date.today() ## THIS MONTH
 todayMonth = str(todayDate)
 todayMonth = todayMonth[5:7]
 todayDay = str(todayDate)
 todayDay = todayDay[8:]
-nextMonth = datetime.date.today() + relativedelta.relativedelta(months=1) 
+nextMonth = datetime.date.today() + relativedelta.relativedelta(months=1) ##NEXT MONTH
 nextMonth2 = str(nextMonth)
 nextMonth2 = nextMonth2[5:7]
 nextDay = str(nextMonth)
 nextDay = nextDay[8:]
-actualDay = date.today().day - 20
+actualDay = date.today().day - 21
 actualDay = str(actualDay)
 todayMonth2 = todayDate.strftime("%B")
 nextMonth3 = nextMonth.strftime("%B")
 file1 = open("C:/Users/agupta-22/Magic-Mirror/athletics.txt", "w")
 
-
 def findCalendar(textFile):
     g = open(textFile, "rb")
     gcal = Calendar.from_ical(g.read())
+    count = 0
     for component in gcal.walk():
         if component.name == "VEVENT":
             startTime = component.get("DTSTART").to_ical()
@@ -41,38 +41,46 @@ def findCalendar(textFile):
             ):
                 menu = component.get("summary")
                 menu2 = component.get("location")
+                # if(count>7):
+                #     break
                 if menu.find("Away")>0:
+                    if menu != None and menu2 != None:
+                        file1.write("")
+                    elif menu != None:
+                        file1.write(menu + " - ")
+                    if startTimeString1 == todayMonth:
+                        file1.write( todayMonth2)
+                    elif startTimeString1 == nextMonth2:
+                        file1.write(nextMonth2)
+                        file1.write("/" + startTimeString2 +',')
+                        file1.write(" ")
+                        file1.write("")
                     file1.write(menu)
-                    if menu != None and menu2 != None:
-                        file1.write("")
-                    elif menu != None:
-                        file1.write(menu + " - ")
-                    if startTimeString1 == todayMonth:
-                        file1.write("\t" + todayMonth2)
-                    elif startTimeString1 == nextMonth2:
-                        file1.write("\t" + nextMonth3)
-                        file1.write("\t" + startTimeString2)
-                        file1.write("\n")
-                        file1.write("")
-                    file1.write("\n")   
+                    file1.write("\n")
+                    # count = count +1
+                    # print (count)
                 elif menu.find("Home")>0:
-                    file1.write(menu)  
                     if menu != None and menu2 != None:
                         file1.write("")
                     elif menu != None:
                         file1.write(menu + " - ")
                     if startTimeString1 == todayMonth:
-                        file1.write("\t" + todayMonth2)
+                        file1.write(todayMonth)
                     elif startTimeString1 == nextMonth2:
-                        file1.write("\t" + nextMonth3)
-                        file1.write("\t" + startTimeString2)
-                        file1.write("\n")
+                        file1.write( nextMonth2)
+                        file1.write("/" + startTimeString2 + ',')
+                        file1.write(" ")
                         file1.write("")
-                    file1.write("\n")     
+                    file1.write(menu) 
+                    file1.write("\n")
+                    # count = count +1 
+                    # print (count)    
                 else:
                    menu = ""
                    file1.write(menu)
-
+                   
+            
+                
     g.close()
 
 findCalendar("team_155_gmt.ics")
