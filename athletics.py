@@ -49,12 +49,14 @@ def findCalendar(textFile):
                     elif menu != None:
                         file1.write(menu + " - ")
                     if startTimeString1 == todayMonth:
-                        file1.write(todayMonth2)
+                        file1.write(todayMonth)
+                        file1.write("/" + startTimeString2 + ',')
+                        file1.write(" ")
                     elif startTimeString1 == nextMonth2:
                         file1.write(nextMonth2)
                         file1.write("/" + startTimeString2 + ',')
                         file1.write(" ")
-                        file1.write("")
+
                     file1.write(menu)
                     file1.write("\n")
                 elif menu.find("Home") > 0:
@@ -64,11 +66,13 @@ def findCalendar(textFile):
                         file1.write(menu + " - ")
                     if startTimeString1 == todayMonth:
                         file1.write(todayMonth)
+                        file1.write("/" + startTimeString2 + ',')
+                        file1.write(" ")
                     elif startTimeString1 == nextMonth2:
                         file1.write(nextMonth2)
                         file1.write("/" + startTimeString2 + ',')
                         file1.write(" ")
-                        file1.write("")
+
                     file1.write(menu)
                     file1.write("\n")
                 else:

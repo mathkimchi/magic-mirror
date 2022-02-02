@@ -1,2 +1,2 @@
-Currently: Sunny
-Temperature now: 33
+Currently: Fog
+Temperature now: 46
