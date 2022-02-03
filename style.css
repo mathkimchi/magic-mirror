@@ -143,20 +143,20 @@ h4 {
 .currentblock{
   color: #cc9800;
   font-size:17px;
-  font-family: Georgia;
+  font-family: sans-serif;
   display: inline-flex;
 }
 .menu{
   color:white;
   font-size:8px;
-  font-family: Georgia;
+  font-family: sans-serif;
   display: inline-flex;
   text-align:left;
 }
 .athletics{
   color:white;
   font-size:8px;
-  font-family: Georgia;
+  font-family: sans-serif;
   display: inline-flex;
   padding-right:135px;
   text-align: left;
@@ -165,7 +165,7 @@ h4 {
 .calendar{
   color:white;
   font-size:7.8px;
-  font-family: Georgia;
+  font-family: sans-serif;
   display: inline-flex;
   text-align: left;
   vertical-align: top;
@@ -174,7 +174,7 @@ h4 {
 .weather{
   color:#cc9800;
   font-size:12px;
-  font-family: Georgia;
+  font-family: sans-serif;
   display: inline-flex;
   text-align: center ;
   vertical-align: bottom;
@@ -183,15 +183,19 @@ h4 {
 .counter{
   color:white;
   font-size:17px;
-  font-family: Georgia;
+  font-family: sans-serif;
   display: inline-flex;
   text-align: center;
   vertical-align: top;
 }
 .student_section{
   color: #cc9800;
-    font-family: Georgia;
+    font-family: sans-serif;
     text-align: center;
     font-size: 20px;
+    padding-right:280px;
+}
+.student_section2{
+    padding-top:5px;
     padding-right:280px;
 }
