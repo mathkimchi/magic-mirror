@@ -39,7 +39,7 @@ h2 {
   font-weight: bold;
   font-size: 60px;
   font-family: 'Brandon Grotesque';
-  padding-right: 80px;
+  padding-left: 150px;
 }
 h3 {
   color:#cc9800;
@@ -178,7 +178,8 @@ h4 {
   display: inline-flex;
   text-align: center ;
   vertical-align: bottom;
-  padding-left:170px;
+  padding-left:105px;
+  padding-top:15px;
 }
 .counter{
   color:white;
@@ -198,4 +199,7 @@ h4 {
 .student_section2{
     padding-top:5px;
     padding-right:230px;
+}
+.magic-mirror{
+  display: inline-flex;
 }
