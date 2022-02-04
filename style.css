@@ -203,11 +203,11 @@ h4 {
 .magic-mirror{
   display: inline-flex;
 }
-.embed-responsive{
+/* .embed-responsive{
   height: 240px !important;
   width: 320px !important;
 }
 .embed-responsive-item {
   height: 240px !important;
   width: 320px !important;
-}
+} */

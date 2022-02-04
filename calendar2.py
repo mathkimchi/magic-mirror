@@ -1,5 +1,5 @@
-file1 = open("C:/Users/agupta-22/Magic-Mirror/calendar2.txt", "w")
-with open('calendar1.txt', 'r') as f:
+file1 = open("/calendar2.txt", "w")
+with open('./calendar1.txt', 'r') as f:
     cnt = 1
     for line in f:
         if cnt <= 16:
