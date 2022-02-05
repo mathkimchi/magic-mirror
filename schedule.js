@@ -223,7 +223,7 @@ var imgElem = document.getElementById('image_1');
     else if (hour == 10  && minutes <= 50) { // Saturday F Block
       imgElem.src = 'SatF.png';
     }
-    else if (hour == 10 && minutes <= 50) { // Saturday G Block
+    else if (hour == 11 && minutes <= 50) { // Saturday G Block
       imgElem.src = 'SatG.png';
     }
     else {
