@@ -39,7 +39,7 @@ h2 {
   font-weight: bold;
   font-size: 60px;
   font-family: 'Brandon Grotesque';
-  padding-left: 160px;
+  padding-left: 115px;
 }
 h3 {
   color:#cc9800;
@@ -103,7 +103,7 @@ h4 {
     text-align: center;
     font-size: 23px;
     /* text-decoration: underline; */
-    padding-right:210px;
+    padding-right:170px;
   
   }
   .item1 {
@@ -179,7 +179,7 @@ h4 {
   display: inline-flex;
   text-align: center ;
   vertical-align: bottom;
-  padding-left:95px;
+  padding-left:140px;
   padding-top:15px;
 }
 .counter{
@@ -195,7 +195,7 @@ h4 {
     font-family: sans-serif;
     text-align: center;
     font-size: 20px;
-    padding-right:210px;
+    padding-right:170px;
 }
 .student_section2{
     padding-top:5px;
@@ -204,18 +204,19 @@ h4 {
 .magic-mirror{
   display: inline-flex;
 }
-/* .embed-responsive{
+ .embed-responsive{
   height: 240px !important;
-  width: 320px !important;
+  
 }
 .embed-responsive-item {
   height: 240px !important;
-  width: 320px !important;
-} */
+
+} 
 .signature{
   color: #cc9800;
   font-family: sans-serif;
   text-align: right;
   font-size: 8px;
   padding-right:213px;
+  padding-top:10px;
 }
