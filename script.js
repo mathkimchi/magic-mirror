@@ -1,4 +1,4 @@
-fetch("/schedule.txt")
+fetch("/Magic-Mirror/schedule.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
@@ -8,7 +8,7 @@ fetch("/schedule.txt")
   .then(text => document.getElementById("portfolio-code").innerText = text)
   .catch(errror => document.getElementById("portfolio-code").innerText = "Unable to fetch portfolio, try again later")
 
-fetch("/menu.txt")
+fetch("/Magic-Mirror/menu.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
@@ -17,7 +17,7 @@ fetch("/menu.txt")
   })
   .then(text => document.getElementById("portfolio-code2").innerText = text)
   .catch(errror => document.getElementById("portfolio-code2").innerText = "Unable to fetch portfolio, try again later")
-fetch("/athletics4.txt")
+fetch("/Magic-Mirror/athletics4.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
@@ -26,7 +26,7 @@ fetch("/athletics4.txt")
   })
   .then(text => document.getElementById("portfolio-code3").innerText = text)
   .catch(errror => document.getElementById("portfolio-code3").innerText = "Unable to fetch portfolio, try again later")
-fetch("/calendar2.txt")
+fetch("/Magic-Mirror/calendar2.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
@@ -35,7 +35,7 @@ fetch("/calendar2.txt")
   })
   .then(text => document.getElementById("portfolio-code4").innerText = text)
   .catch(errror => document.getElementById("portfolio-code4").innerText = "Unable to fetch portfolio, try again later")
-fetch("/weather.txt")
+fetch("/Magic-Mirror/weather.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
@@ -44,7 +44,7 @@ fetch("/weather.txt")
   })
   .then(text => document.getElementById("portfolio-code5").innerText = text + ' °F')
   .catch(errror => document.getElementById("portfolio-code5").innerText = "Unable to fetch portfolio, try again later")
-fetch("/counter.txt")
+fetch("/Magic-Mirror/counter.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
