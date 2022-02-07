@@ -1,7 +1,7 @@
 import csv
 import operator
-file1 = open("/athletics2.txt", "w")
-sample = open('./athletics.txt','r')
+file1 = open("athletics2.txt", "w")
+sample = open('athletics.txt','r')
 csv1 = csv.reader(sample,delimiter=',')
 sort= sorted(csv1,key=operator.itemgetter(0))
 

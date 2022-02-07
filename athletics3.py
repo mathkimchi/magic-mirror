@@ -1,6 +1,6 @@
 from pathlib import Path
-file1 = open("/athletics3.txt", "w")
-dates=Path('./athletics2.txt').read_text()
+file1 = open("athletics3.txt", "w")
+dates=Path('athletics2.txt').read_text()
 dates=str(dates)
 dates=dates.replace("[",'').strip()
 dates=dates.replace("]",'').strip()

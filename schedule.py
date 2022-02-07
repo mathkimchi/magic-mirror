@@ -1,6 +1,6 @@
 from datetime import datetime
 
-file = open("/schedule.txt", "w")
+file = open("schedule.txt", "w")
 
 time = datetime.now().strftime("%H:%M")
 time2 = datetime.now().strftime("%I:%M")

@@ -1,5 +1,5 @@
-file1 = open("/athletics4.txt", "w")
-with open('./athletics3.txt', 'r') as f:
+file1 = open("athletics4.txt", "w")
+with open('athletics3.txt', 'r') as f:
     cnt = 1
     for line in f:
         if cnt <= 17:
