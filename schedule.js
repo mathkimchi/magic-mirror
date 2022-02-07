@@ -233,4 +233,49 @@ var imgElem = document.getElementById('image_1');
   if (today == 0) {
     imgElem.src = 'dailyschedule.png';
   }
+  if (hour == 8 && minutes == 0) {
+    window.location.reload();
+  }
+  else if (hour == 9 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 10 && minutes == 20) { 
+    window.location.reload();
+  }
+  else if (hour == 11 && minutes == 20) { 
+    window.location.reload();
+  }
+  else if (hour == 12 && minutes == 10) { 
+    window.location.reload();
+  }
+  else if (hour == 14 && minutes == 10) { 
+    window.location.reload();
+  }
+  else if (hour == 15 && minutes > 10) { 
+    window.location.reload();
+  }
+  else if (hour == 24 && minutes ==0) { 
+    window.location.reload();
+  }
+  if (today == 1 || today == 3 || today ==5) {
+    if (hour == 12 && minutes == 55) {
+      window.location.reload();
+    }
+  }
+  else if (today == 2 || today == 4) {
+    if (hour == 13 && minutes == 20) {
+      window.location.reload();
+  }
+  }
+  else if (today == 6 ) {
+    if (hour == 11 && minutes >50) {
+      window.location.reload();
+  }
+  }
+  else if (today == 3 ) {
+    if (hour == 13 && minutes >45) {
+      window.location.reload();
+  }
+  }
+
 })();

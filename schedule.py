@@ -1,27 +1,27 @@
-from datetime import datetime
+# from datetime import datetime
 
-file = open("schedule.txt", "w")
+# file = open("schedule.txt", "w")
 
-time = datetime.now().strftime("%H:%M")
-time2 = datetime.now().strftime("%I:%M")
-headings = []
-headings = time2
-headings = headings.replace("01:", "1:")
-headings = headings.replace("02:", "2:")
-headings = headings.replace("03:", "3:")
-headings = headings.replace("04:", "4:")
-headings = headings.replace("05:", "5:")
-headings = headings.replace("06:", "6:")
-headings = headings.replace("07:", "7:")
-headings = headings.replace("08:", "8:")
-headings = headings.replace("09:", "9:")
-if time < "12:00":
-    file.write(headings + " AM \n")
+# time = datetime.now().strftime("%H:%M")
+# time2 = datetime.now().strftime("%I:%M")
+# headings = []
+# headings = time2
+# headings = headings.replace("01:", "1:")
+# headings = headings.replace("02:", "2:")
+# headings = headings.replace("03:", "3:")
+# headings = headings.replace("04:", "4:")
+# headings = headings.replace("05:", "5:")
+# headings = headings.replace("06:", "6:")
+# headings = headings.replace("07:", "7:")
+# headings = headings.replace("08:", "8:")
+# headings = headings.replace("09:", "9:")
+# if time < "12:00":
+#     file.write(headings + " AM \n")
     
-elif time >= "12:00":
-    file.write(headings + " PM \n")
-weekday = datetime.today().strftime("%A")
-print (time)
+# elif time >= "12:00":
+#     file.write(headings + " PM \n")
+# weekday = datetime.today().strftime("%A")
+# print (time)
 # file.write("Current Block: ")    
 # if time >= "8:00" and time <= "8:50" and weekday == "Monday":
 #     file.write("A")
