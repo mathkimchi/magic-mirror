@@ -1,3 +1,3 @@
-setTimeout(function() {
-    location.reload();
-  }, 30000);
+window.setTimeout(function () {
+  window.location.reload();
+}, 30000);
