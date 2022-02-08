@@ -7,25 +7,25 @@ var imgElem = document.getElementById('image_1');
 (function () {
   if (today == 1) {
     if (hour == 8 && minutes <= 50) { // Monday A Block
-      imgElem.src = 'MonA.png';
+      imgElem.src = 'MonA.PNG';
     }
     else if (hour == 9) { // Monday B Block
-      imgElem.src = 'MonB.png';
+      imgElem.src = 'MonB.PNG';
     }
     else if (hour == 10 && minutes >= 0 && minutes <= 15) { // Monday B Block
-      imgElem.src = 'MonB.png';
+      imgElem.src = 'MonB.PNG';
     }
     else if (hour == 10 && minutes >= 20) { // Monday Chapel and Conference Block
-      imgElem.src = 'MonChapel.png';
+      imgElem.src = 'MonChapel.PNG';
     }
     else if (hour == 11 && minutes >= 0 && minutes <= 15) { // Monday Chapel and Conference Block
-      imgElem.src = 'MonChapel.png';
+      imgElem.src = 'MonChapel.PNG';
     }
     else if (hour == 11 && minutes >=20) { // Monday C Block
-      imgElem.src = 'MonC.png';
+      imgElem.src = 'MonC.PNG';
     }
     else if (hour == 12 && minutes <=10) { // Monday C Block
-      imgElem.src = 'MonC.png';
+      imgElem.src = 'MonC.PNG';
     }
     else if (hour == 12 && minutes > 10 && minutes < 55) { // Monday Lunch
       imgElem.src = 'MonLunch.jpg';
@@ -46,192 +46,192 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'MonE.jpg';
     }
     else {
-      imgElem.src = 'dailyschedule.png';
+      imgElem.src = 'dailyschedule.PNG';
     }
   }
   if (today == 2) {
     if (hour == 8 && minutes <= 50) { // Tuesday F Block
-      imgElem.src = 'TuesF.png';
+      imgElem.src = 'TuesF.PNG';
     }
     else if (hour == 9) { // Tuesday G Block
-      imgElem.src = 'TuesG.png';
+      imgElem.src = 'TuesG.PNG';
     }
     else if (hour == 10 && minutes >= 0 && minutes <= 15) { // Tuesday G Block
-      imgElem.src = 'TuesG.png';
+      imgElem.src = 'TuesG.PNG';
     }
     else if (hour == 10 && minutes >= 20) { // Tuesday DMX Block
-      imgElem.src = 'TuesDMX.png';
+      imgElem.src = 'TuesDMX.PNG';
     }
     else if (hour == 11 && minutes >= 0 && minutes <= 15) { // Tuesday DMX Block
-      imgElem.src = 'TuesDMX.png';
+      imgElem.src = 'TuesDMX.PNG';
     }
     else if (hour == 11 && minutes >=15) { // Tuesday A Block
-      imgElem.src = 'TuesA.png';
+      imgElem.src = 'TuesA.PNG';
     }
     else if (hour == 12 && minutes <=10) { // Tuesday A BLock
-      imgElem.src = 'TuesA.png';
+      imgElem.src = 'TuesA.PNG';
     }
     else if (hour == 12 && minutes >10) { // Tuesday Lunch 
-      imgElem.src = 'TuesLunch.png';
+      imgElem.src = 'TuesLunch.PNG';
     }
     else if (hour == 13 && minutes >= 0 && minutes < 20) { // Tuesday Lunch 
-      imgElem.src = 'TuesLunch.png';
+      imgElem.src = 'TuesLunch.PNG';
     }
     else if (hour == 13 && minutes >=20) { // Tuesday C Block
-      imgElem.src = 'TuesC.png';
+      imgElem.src = 'TuesC.PNG';
     }
     else if (hour == 14 && minutes >= 0 && minutes < 10) { // Tuesday C Block
-      imgElem.src = 'TuesC.png';
+      imgElem.src = 'TuesC.PNG';
     }
     else if (hour == 14 && minutes >= 10) { // Tuesday B Block
-      imgElem.src = 'TuesB.png';
+      imgElem.src = 'TuesB.PNG';
     }
     else if (hour == 15 && minutes >= 0 && minutes < 10) { // Tuesday B Block
-      imgElem.src = 'TuesB.png';
+      imgElem.src = 'TuesB.PNG';
     }
     else {
-      imgElem.src = 'dailyschedule.png';
+      imgElem.src = 'dailyschedule.PNG';
     }
   }
   if (today == 3) {
     if (hour == 8 && minutes <= 50) { // Wednesday D Block
-      imgElem.src = 'WedD.png';
+      imgElem.src = 'WedD.PNG';
     }
     else if (hour == 9) { // Wednesday E Block
-      imgElem.src = 'WedE.png';
+      imgElem.src = 'WedE.PNG';
     }
     else if (hour == 10 && minutes >= 20) { // Wednesday Community Meeting
-      imgElem.src = 'WedComm.png';
+      imgElem.src = 'WedComm.PNG';
     }
     else if (hour == 11 && minutes >= 0 && minutes <= 15) { // Wednesday Community Meeting
-      imgElem.src = 'WedComm.png';
+      imgElem.src = 'WedComm.PNG';
     }
     else if (hour == 11 && minutes >=20) { // Wednesday G Block
-      imgElem.src = 'WedLunch.png';
+      imgElem.src = 'WedLunch.PNG';
     }
     else if (hour == 12 && minutes <= 10) { // Wednesday G Block
-      imgElem.src = 'WedLunch.png';
+      imgElem.src = 'WedLunch.PNG';
     }
     else if (hour == 12 && minutes > 10 && minutes<55) { // Wednesday Lunch
-      imgElem.src = 'WedLunch.png';
+      imgElem.src = 'WedLunch.PNG';
     }
     else if (hour == 12 && minutes>=55) { // Wednesday F Block
-      imgElem.src = 'WedLunch.png';
+      imgElem.src = 'WedLunch.PNG';
     }
     else if (hour == 13 && minutes >= 0 && minutes <= 45 ) { // Wednesday F Block
-      imgElem.src = 'WedF.png';
+      imgElem.src = 'WedF.PNG';
     }
     else {
-      imgElem.src = 'dailyschedule.png';
+      imgElem.src = 'dailyschedule.PNG';
     }
   }
   if (today == 4) {
     if (hour == 8 && minutes <= 50) { // Thursday B Block
-      imgElem.src = 'ThursB.png';
+      imgElem.src = 'ThursB.PNG';
     }
     else if (hour == 9) { // Thursday C Block
-      imgElem.src = 'ThursC.png';
+      imgElem.src = 'ThursC.PNG';
     }
     else if (hour == 10 && minutes >= 0 && minutes <= 15) { // Thursday C Block
-      imgElem.src = 'ThursC.png';
+      imgElem.src = 'ThursC.PNG';
     }
     else if (hour == 10 && minutes >= 20) { // Thursday DMX Block
-      imgElem.src = 'ThursDMX.png';
+      imgElem.src = 'ThursDMX.PNG';
     }
     else if (hour == 11 && minutes >= 0 && minutes <= 15) { // Thursday DMX Block
-      imgElem.src = 'ThursDMX.png';
+      imgElem.src = 'ThursDMX.PNG';
     }
     else if (hour == 11 && minutes >=15) { // Thursday D Block
-      imgElem.src = 'ThursD.png';
+      imgElem.src = 'ThursD.PNG';
     }
     else if (hour == 12 && minutes <=10) { // Thursday D BLock
-      imgElem.src = 'ThursD.png';
+      imgElem.src = 'ThursD.PNG';
     }
     else if (hour == 12 && minutes >10) { // Thursday Lunch 
-      imgElem.src = 'ThursLunch.png';
+      imgElem.src = 'ThursLunch.PNG';
     }
     else if (hour == 13 && minutes >= 0 && minutes < 20) { // Thursday Lunch 
-      imgElem.src = 'ThursLunch.png';
+      imgElem.src = 'ThursLunch.PNG';
     }
     else if (hour == 13 && minutes >=20) { // Thursday E Block
-      imgElem.src = 'ThursE.png';
+      imgElem.src = 'ThursE.PNG';
     }
     else if (hour == 14 && minutes >= 0 && minutes < 10) { // Thursday E Block
-      imgElem.src = 'ThursE.png';
+      imgElem.src = 'ThursE.PNG';
     }
     else if (hour == 14 && minutes >= 10) { // Thursday A Block
-      imgElem.src = 'ThursA.png';
+      imgElem.src = 'ThursA.PNG';
     }
     else if (hour == 15 && minutes >= 0 && minutes < 10) { // Thursday A Block
-      imgElem.src = 'ThursA.png';
+      imgElem.src = 'ThursA.PNG';
     }
     else {
-      imgElem.src = 'dailyschedule.png';
+      imgElem.src = 'dailyschedule.PNG';
     }
   }
   if (today == 5) {
     if (hour == 8 && minutes <= 50) { // Friday G Block
-      imgElem.src = 'FriG.png';
+      imgElem.src = 'FriG.PNG';
     }
     else if (hour == 9) { // Friday F Block
-      imgElem.src = 'FriF.png';
+      imgElem.src = 'FriF.PNG';
     }
     else if (hour == 10 && minutes >= 0 && minutes <= 15) { // Friday F Block
-      imgElem.src = 'FriF.png';
+      imgElem.src = 'FriF.PNG';
     }
     else if (hour == 10 && minutes >= 20) { // Friday Chapel and Conference Block
-      imgElem.src = 'FriChapel.png';
+      imgElem.src = 'FriChapel.PNG';
     }
     else if (hour == 11 && minutes >= 0 && minutes <= 15) { // Friday Chapel and Conference Block
-      imgElem.src = 'FriChapel.png';
+      imgElem.src = 'FriChapel.PNG';
     }
     else if (hour == 11 && minutes >=20) { // Friday B Block
-      imgElem.src = 'FriB.png';
+      imgElem.src = 'FriB.PNG';
     }
     else if (hour == 12 && minutes <=10) { // Friday C Block
-      imgElem.src = 'FriB.png';
+      imgElem.src = 'FriB.PNG';
     }
     else if (hour == 12 && minutes > 10 && minutes < 55) { // Friday Lunch
       imgElem.src = 'FriLunch.jpg';
     }
     else if (hour == 12 && minutes >=55) { // Friday A Block
-      imgElem.src = 'FriA.png';
+      imgElem.src = 'FriA.PNG';
     }
     else if (hour == 13) { // Friday A Block
-      imgElem.src = 'FriA.png';
+      imgElem.src = 'FriA.PNG';
     }
     else if (hour == 14 && minutes >= 0 && minutes < 10) { // Friday A Block
-      imgElem.src = 'FriA.png';
+      imgElem.src = 'FriA.PNG';
     }
     else if (hour == 14 && minutes >= 10) { // Friday C Block
-      imgElem.src = 'FriC.png';
+      imgElem.src = 'FriC.PNG';
     }
     else if (hour == 15 && minutes >= 0 && minutes < 10) { // Friday C Block
-      imgElem.src = 'FriC.png';
+      imgElem.src = 'FriC.PNG';
     }
     else {
-      imgElem.src = 'dailyschedule.png';
+      imgElem.src = 'dailyschedule.PNG';
     }
   }
   if (today == 6) {
     if (hour == 8 && minutes <= 50) { // Saturday E Block
-      imgElem.src = 'SatE.png';
+      imgElem.src = 'SatE.PNG';
     }
     else if (hour == 9 && minutes <= 50) { // Saturday D Block
-      imgElem.src = 'SatD.png';
+      imgElem.src = 'SatD.PNG';
     }
     else if (hour == 10  && minutes <= 50) { // Saturday F Block
-      imgElem.src = 'SatF.png';
+      imgElem.src = 'SatF.PNG';
     }
     else if (hour == 11 && minutes <= 50) { // Saturday G Block
-      imgElem.src = 'SatG.png';
+      imgElem.src = 'SatG.PNG';
     }
     else {
-      imgElem.src = 'dailyschedule.png';
+      imgElem.src = 'dailyschedule.PNG';
     }
   }
   if (today == 0) {
-    imgElem.src = 'dailyschedule.png';
+    imgElem.src = 'dailyschedule.PNG';
   }
   if (hour == 8 && minutes == 0) {
     window.location.reload();

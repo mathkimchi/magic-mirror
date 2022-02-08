@@ -4,7 +4,7 @@ file = open("counter.txt", "w")
 weekday = datetime.today().strftime("%A")
 
 time = datetime.now().strftime("%H:%M")
-count= 111
+count= 110
 if time == "24:00":
  count2=count-1
  count2 = str(count2)
