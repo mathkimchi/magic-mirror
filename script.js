@@ -1,13 +1,3 @@
-fetch("/Magic-Mirror/schedule.txt")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error("Bad Response")
-    }
-    return response.text()
-  })
-  .then(text => document.getElementById("portfolio-code").innerText = text)
-  .catch(errror => document.getElementById("portfolio-code").innerText = "Unable to fetch portfolio, try again later")
-
 fetch("/Magic-Mirror/menu.txt")
   .then(response => {
     if (!response.ok) {
@@ -42,7 +32,7 @@ fetch("/Magic-Mirror/weather.txt")
     }
     return response.text()
   })
-  .then(text => document.getElementById("portfolio-code5").innerText = text + ' °F')
+  .then(text => document.getElementById("portfolio-code5").innerText = text + ' F')
   .catch(errror => document.getElementById("portfolio-code5").innerText = "Unable to fetch portfolio, try again later")
 fetch("/Magic-Mirror/counter.txt")
   .then(response => {

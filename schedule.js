@@ -248,7 +248,7 @@ var imgElem = document.getElementById('image_1');
   else if (hour == 12 && minutes == 10) { 
     window.location.reload();
   }
-  else if (hour == 14 && minutes == 10) { 
+  else if (hour == 14 && minutes == 20) { 
     window.location.reload();
   }
   else if (hour == 15 && minutes > 10) { 
