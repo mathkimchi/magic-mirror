@@ -28,22 +28,22 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'MonC.PNG';
     }
     else if (hour == 12 && minutes > 10 && minutes < 55) { // Monday Lunch
-      imgElem.src = 'MonLunch.jpg';
+      imgElem.src = 'MonLunch.PNG';
     }
     else if (hour == 12 && minutes >=55) { // Monday D Block
-      imgElem.src = 'MonD.jpg';
+      imgElem.src = 'MonD.PNG';
     }
     else if (hour == 13) { // Monday D Block
-      imgElem.src = 'MonD.jpg';
+      imgElem.src = 'MonD.PNG';
     }
     else if (hour == 14 && minutes >= 0 && minutes < 10) { // D Block
-      imgElem.src = 'MonD.jpg';
+      imgElem.src = 'MonD.PNG';
     }
     else if (hour == 14 && minutes >= 10) { // Monday E Block
-      imgElem.src = 'MonE.jpg';
+      imgElem.src = 'MonE.PNG';
     }
     else if (hour == 15 && minutes >= 0 && minutes < 10) { // E Block
-      imgElem.src = 'MonE.jpg';
+      imgElem.src = 'MonE.PNG';
     }
     else {
       imgElem.src = 'dailyschedule.PNG';
@@ -192,7 +192,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'FriB.PNG';
     }
     else if (hour == 12 && minutes > 10 && minutes < 55) { // Friday Lunch
-      imgElem.src = 'FriLunch.jpg';
+      imgElem.src = 'FriLunch.PNG';
     }
     else if (hour == 12 && minutes >=55) { // Friday A Block
       imgElem.src = 'FriA.PNG';
