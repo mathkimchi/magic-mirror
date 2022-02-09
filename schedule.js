@@ -116,7 +116,7 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'WedLunch.PNG';
     }
     else if (hour == 12 && minutes>=55) { // Wednesday F Block
-      imgElem.src = 'WedLunch.PNG';
+      imgElem.src = 'WedF.PNG';
     }
     else if (hour == 13 && minutes >= 0 && minutes <= 45 ) { // Wednesday F Block
       imgElem.src = 'WedF.PNG';
