@@ -233,6 +233,27 @@ var imgElem = document.getElementById('image_1');
   if (today == 0) {
     imgElem.src = 'DailySchedule.PNG';
   }
+  else if (hour == 1  && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 2 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 3 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 4 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 5 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 6 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 7 && minutes == 0) { 
+    window.location.reload();
+  }
   if (hour == 8 && minutes == 0) {
     window.location.reload();
   }
@@ -252,6 +273,30 @@ var imgElem = document.getElementById('image_1');
     window.location.reload();
   }
   else if (hour == 15 && minutes > 10) { 
+    window.location.reload();
+  }
+  else if (hour == 16 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 17 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 18 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 19 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 20 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 21 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 22 && minutes == 0) { 
+    window.location.reload();
+  }
+  else if (hour == 23 && minutes == 0) { 
     window.location.reload();
   }
   else if (hour == 24 && minutes ==0) { 
