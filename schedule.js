@@ -107,10 +107,10 @@ var imgElem = document.getElementById('image_1');
       imgElem.src = 'WedComm.PNG';
     }
     else if (hour == 11 && minutes >=20) { // Wednesday G Block
-      imgElem.src = 'WedLunch.PNG';
+      imgElem.src = 'WedG.PNG';
     }
     else if (hour == 12 && minutes <= 10) { // Wednesday G Block
-      imgElem.src = 'WedLunch.PNG';
+      imgElem.src = 'WedG.PNG';
     }
     else if (hour == 12 && minutes > 10 && minutes<55) { // Wednesday Lunch
       imgElem.src = 'WedLunch.PNG';
