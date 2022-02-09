@@ -233,73 +233,73 @@ var imgElem = document.getElementById('image_1');
   if (today == 0) {
     imgElem.src = 'DailySchedule.PNG';
   }
-  else if (hour == 1  && minutes == 0) { 
+  else if (hour == 1  && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 2 && minutes == 0) { 
+  else if (hour == 2 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 3 && minutes == 0) { 
+  else if (hour == 3 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 4 && minutes == 0) { 
+  else if (hour == 4 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 5 && minutes == 0) { 
+  else if (hour == 5 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 6 && minutes == 0) { 
+  else if (hour == 6 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 7 && minutes == 0) { 
+  else if (hour == 7 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  if (hour == 8 && minutes == 0) {
+  if (hour == 8 && minutes == 0 && seconds ==0 ) {
     window.location.reload();
   }
-  else if (hour == 9 && minutes == 0) { 
+  else if (hour == 9 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 10 && minutes == 20) { 
+  else if (hour == 10 && minutes == 20 && seconds ==0) { 
     window.location.reload();
   }
-  else if (hour == 11 && minutes == 20) { 
+  else if (hour == 11 && minutes == 20 && seconds ==0) { 
     window.location.reload();
   }
-  else if (hour == 12 && minutes == 10) { 
+  else if (hour == 12 && minutes == 10 && seconds ==0) { 
     window.location.reload();
   }
-  else if (hour == 14 && minutes == 20) { 
+  else if (hour == 14 && minutes == 20 && seconds ==0) { 
     window.location.reload();
   }
-  else if (hour == 15 && minutes > 10) { 
+  else if (hour == 15 && minutes > 10 && seconds ==0) { 
     window.location.reload();
   }
-  else if (hour == 16 && minutes == 0) { 
+  else if (hour == 16 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 17 && minutes == 0) { 
+  else if (hour == 17 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 18 && minutes == 0) { 
+  else if (hour == 18 && minutes == 0 && seconds ==0  ) { 
     window.location.reload();
   }
-  else if (hour == 19 && minutes == 0) { 
+  else if (hour == 19 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 20 && minutes == 0) { 
+  else if (hour == 20 && minutes == 0 && seconds ==0)  { 
     window.location.reload();
   }
-  else if (hour == 21 && minutes == 0) { 
+  else if (hour == 21 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 22 && minutes == 0) { 
+  else if (hour == 22 && minutes == 0 && seconds ==0 ) { 
     window.location.reload();
   }
-  else if (hour == 23 && minutes == 0) { 
+  else if (hour == 23 && minutes == 0 && seconds ==0) { 
     window.location.reload();
   }
-  else if (hour == 24 && minutes ==0) { 
+  else if (hour == 24 && minutes ==0 && seconds ==0) { 
     window.location.reload();
   }
   if (today == 1 || today == 3 || today ==5) {

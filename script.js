@@ -34,15 +34,6 @@ fetch("/Magic-Mirror/weather.txt")
   })
   .then(text => document.getElementById("portfolio-code5").innerText = text + ' F')
   .catch(errror => document.getElementById("portfolio-code5").innerText = "Unable to fetch portfolio, try again later")
-fetch("/Magic-Mirror/counter.txt")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error("Bad Response")
-    }
-    return response.text()
-  })
-  .then(text => document.getElementById("portfolio-code6").innerText = text)
-  .catch(errror => document.getElementById("portfolio-code6").innerText = "Unable to fetch portfolio, try again later")
 
 function currentTime() {
   let date = new Date();
