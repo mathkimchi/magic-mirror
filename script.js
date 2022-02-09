@@ -32,7 +32,7 @@ fetch("/Magic-Mirror/weather.txt")
     }
     return response.text()
   })
-  .then(text => document.getElementById("portfolio-code5").innerText = text + ' F')
+  .then(text => document.getElementById("portfolio-code5").innerText = text + ' \u2109')
   .catch(errror => document.getElementById("portfolio-code5").innerText = "Unable to fetch portfolio, try again later")
 
 function currentTime() {
