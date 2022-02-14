@@ -233,27 +233,6 @@ var imgElem = document.getElementById('image_1');
   if (today == 0) {
     imgElem.src = 'DailySchedule.PNG';
   }
-  else if (hour == 1  && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
-  else if (hour == 2 && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
-  else if (hour == 3 && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
-  else if (hour == 4 && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
-  else if (hour == 5 && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
-  else if (hour == 6 && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
-  else if (hour == 7 && minutes == 0 && seconds ==0 ) { 
-    window.location.reload();
-  }
   if (hour == 8 && minutes == 0 && seconds ==0 ) {
     window.location.reload();
   }
@@ -303,23 +282,44 @@ var imgElem = document.getElementById('image_1');
     window.location.reload();
   }
   if (today == 1 || today == 3 || today ==5) {
-    if (hour == 12 && minutes == 55) {
+    if (hour == 12 && minutes == 55 && seconds ==0) {
       window.location.reload();
     }
   }
   else if (today == 2 || today == 4) {
-    if (hour == 13 && minutes == 20) {
+    if (hour == 13 && minutes == 20 && seconds ==0) {
       window.location.reload();
   }
   }
   else if (today == 6 ) {
-    if (hour == 11 && minutes >50) {
+    if (hour == 11 && minutes == 51 && seconds ==0) {
       window.location.reload();
   }
   }
   else if (today == 3 ) {
-    if (hour == 13 && minutes >45) {
+    if (hour == 13 && minutes == 46 && seconds ==0) {
       window.location.reload();
+  }
+  else if (hour == 1  && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
+  }
+  else if (hour == 2 && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
+  }
+  else if (hour == 3 && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
+  }
+  else if (hour == 4 && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
+  }
+  else if (hour == 5 && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
+  }
+  else if (hour == 6 && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
+  }
+  else if (hour == 7 && minutes == 0 && seconds ==0 ) { 
+    window.location.reload();
   }
   }
 
