@@ -17,7 +17,7 @@ nextMonth2 = str(nextMonth)
 nextMonth2 = nextMonth2[5:7]
 nextDay = str(nextMonth)
 nextDay = nextDay[8:]
-actualDay = date.today().day - 21
+actualDay = date.today().day 
 actualDay = str(actualDay)
 todayMonth2 = todayDate.strftime("%B")
 nextMonth3 = nextMonth.strftime("%B")
@@ -38,7 +38,7 @@ def findCalendar(textFile):
                 startTimeString1 == todayMonth
                 and startTimeString2 >= nextDay
                 or startTimeString1 == nextMonth2
-                and startTimeString2 < actualDay
+                
             ):
                 menu = component.get("summary")
                 menu2 = component.get("location")
