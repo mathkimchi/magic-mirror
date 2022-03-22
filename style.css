@@ -217,9 +217,9 @@ h4 {
   font-family: sans-serif;
   text-align: right;
   font-size: 8px;
-  padding-right:130px;
+  padding-right:260px;
   vertical-align: top;
   position:relative;
-  bottom:20px !important;
+  bottom:30px !important;
   /* padding-top:5px; */
 }
