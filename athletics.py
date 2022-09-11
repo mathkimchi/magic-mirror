@@ -30,6 +30,7 @@ def findCalendar(textFile):
 
     for component in gcal.walk():
         if component.name == "VEVENT":
+            #Check that the event is this or next month
             startTime = component.get("DTSTART").to_ical()
             startTimeString = startTime.decode("utf-8")
             startTimeString1 = startTimeString[4:6]
@@ -40,10 +41,10 @@ def findCalendar(textFile):
                 or startTimeString1 == nextMonth2
                 
             ):
+                #read the summary, location, and home/away and add it to athletics.txt
                 menu = component.get("summary")
                 menu2 = component.get("location")
-
-                if menu.find("Away") > 0:
+                if menu.find("Away") > 0: #if the event is an away game...
                     if menu != None and menu2 != None:
                         file1.write("")
                     elif menu != None:
@@ -59,7 +60,7 @@ def findCalendar(textFile):
 
                     file1.write(menu)
                     file1.write("\n")
-                elif menu.find("Home") > 0:
+                elif menu.find("Home") > 0: #identical to the menu.find("Away") code?
                     if menu != None and menu2 != None:
                         file1.write("")
                     elif menu != None:
@@ -117,4 +118,6 @@ findCalendar("team_190_gmt.ics")
 findCalendar("team_191_gmt.ics")
 findCalendar("team_192_gmt.ics")
 findCalendar("team_194_gmt.ics")
+
 file1.close()
+    

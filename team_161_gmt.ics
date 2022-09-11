@@ -3,5 +3,32 @@ VERSION:2.0
 PRODID:-//Peddie School/finalsite//NONSGML v1.0//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Rowing - Boys and Girls Varsity
+BEGIN:VEVENT
+UID:84188@www.peddie.org
+DTSTAMP:20220911T003802Z
+DTSTART;VALUE=DATE:20221023
+SUMMARY:Rowing - Boys and Girls Varsity  - Head of The Charles Regatta (depart on 10/22) (Away)
+DESCRIPTION:
+LOCATION:Charles River
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:84189@www.peddie.org
+DTSTAMP:20220911T003802Z
+DTSTART;VALUE=DATE:20221030
+SUMMARY:Rowing - Boys and Girls Varsity  - Head of The Schuylkill Regatta (Away)
+DESCRIPTION:
+LOCATION:Schuylkill River
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:84190@www.peddie.org
+DTSTAMP:20220911T003802Z
+DTSTART;VALUE=DATE:20221102
+SUMMARY:Rowing - Boys and Girls Varsity  - Mercer Challenge (Home)
+DESCRIPTION:
+LOCATION:Caspersen Rowing Center
+PRIORITY:0
+END:VEVENT
 
 END:VCALENDAR

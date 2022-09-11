@@ -3,5 +3,112 @@ VERSION:2.0
 PRODID:-//Peddie School/finalsite//NONSGML v1.0//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Cross Country - Boys' and Girls' Varsity
+BEGIN:VEVENT
+UID:85102@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20220901T173000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - West Windsor-Plainsboro North & Notre Dame High School (pre season athletes) (Away)
+DESCRIPTION:
+LOCATION:West Windsor-Plainsboro North
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:85770@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART;VALUE=DATE:20220907
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Off campus practice
+DESCRIPTION:
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:85756@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20220917T113000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Robbinsville High School Invitational (varsity and junior varsity) (Away)
+DESCRIPTION:
+LOCATION:Robbinsville High School
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:86022@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20220924T150000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Jerry Hart Cross Country Memorial Invitational (all levels) (Home)
+DESCRIPTION:
+LOCATION:Peddie Golf Course
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:84304@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART;VALUE=DATE:20221001
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Shore Coaches Invitational (Away)
+DESCRIPTION:
+LOCATION:Holmdel Park
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:85084@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221007T164500
+SUMMARY:Cross Country - Boys' and Girls' Varsity - The Hill School (all levels) CHANGED:New date\, was originally scheduled on 10/09/22 (Away)
+DESCRIPTION:
+LOCATION:The Hill School
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:83839@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221015T140000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Lawrenceville School (all levels) (Home)
+DESCRIPTION:
+LOCATION:Peddie Golf Course
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:84637@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221020T160000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - MCTA Championships (varsity\, tentative date)) (Away)
+DESCRIPTION:
+LOCATION:Thompson Park
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:85061@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221022T140000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Mercer Track Coaches JV Cross Country Invitational (junior varsity and freshman\, full race schedule under details tab) (Away)
+DESCRIPTION:
+LOCATION:Robbinsville High School
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:83834@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221026T133000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - MAPL Championships (varsity\, rain date 10/27) (Home)
+DESCRIPTION:
+LOCATION:Peddie Golf Course
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:84635@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221102T130000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - NJISAA Prep A & B Championships (varsity) (Away)
+DESCRIPTION:
+LOCATION:Blair Academy
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:83841@www.peddie.org
+DTSTAMP:20220911T005603Z
+DTSTART:20221105T144500
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Blair Academy (all levels) (Home)
+DESCRIPTION:
+LOCATION:Peddie Golf Course
+PRIORITY:0
+END:VEVENT
 
 END:VCALENDAR
