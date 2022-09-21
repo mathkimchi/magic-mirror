@@ -63,7 +63,7 @@ h4 {
 }
 .first-column {
   width: 25%;
-  padding-top:30px;
+  padding-top:85px;
   padding-left:120px;
   float: left;
   text-align: center;
@@ -72,7 +72,7 @@ h4 {
 
 .second-column {
   width: 75%;
-  padding-top:30px;
+  padding-top:85px;
   float: right;
   text-align: center;
   display: inline;
