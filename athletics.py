@@ -43,37 +43,14 @@ def findCalendar(textFile):
             ):
                 #read the summary, location, and home/away and add it to athletics.txt
                 menu = component.get("summary")
-                menu2 = component.get("location")
-                if menu.find("Away") > 0: #if the event is an away game...
-                    if menu != None and menu2 != None:
-                        file1.write("")
-                    elif menu != None:
-                        file1.write(menu + " - ")
-                    if startTimeString1 == todayMonth:
-                        file1.write(todayMonth)
-                        file1.write("/" + startTimeString2 + ',')
-                        file1.write(" ")
-                    elif startTimeString1 == nextMonth2:
-                        file1.write(nextMonth2)
-                        file1.write("/" + startTimeString2 + ',')
-                        file1.write(" ")
+                menu2 = component.get("location") # never used?
+                if menu.find("Away") > 0 or menu.find("Home") > 0: #if the event is labeled home or away, save it
+                    #write the date of the event
+                    file1.write(startTimeString1)
+                    file1.write("/" + startTimeString2 + ',')
+                    file1.write(" ")
 
-                    file1.write(menu)
-                    file1.write("\n")
-                elif menu.find("Home") > 0: #identical to the menu.find("Away") code?
-                    if menu != None and menu2 != None:
-                        file1.write("")
-                    elif menu != None:
-                        file1.write(menu + " - ")
-                    if startTimeString1 == todayMonth:
-                        file1.write(todayMonth)
-                        file1.write("/" + startTimeString2 + ',')
-                        file1.write(" ")
-                    elif startTimeString1 == nextMonth2:
-                        file1.write(nextMonth2)
-                        file1.write("/" + startTimeString2 + ',')
-                        file1.write(" ")
-
+                    #write the event summary
                     file1.write(menu)
                     file1.write("\n")
                 else:
@@ -82,6 +59,7 @@ def findCalendar(textFile):
     g.close()
 
 
+findCalendar("team_154_gmt.ics")
 findCalendar("team_155_gmt.ics")
 findCalendar("team_156_gmt.ics")
 findCalendar("team_157_gmt.ics")
