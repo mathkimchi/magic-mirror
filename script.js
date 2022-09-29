@@ -1,4 +1,4 @@
-fetch("/Magic-Mirror/menu.txt")
+fetch("/Magic-Mirror/menu2.txt")
   .then(response => {
     if (!response.ok) {
       throw new Error("Bad Response")
