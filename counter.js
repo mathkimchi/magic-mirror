@@ -1,8 +1,7 @@
-var deadline = new Date("May 28, 2023").getTime(); // increment the date by 1 for some reason it shows the number of days by 1 less
+//calculates the days until graduation
+var deadline = new Date("May 28, 2023").getTime(); //change this to set the graduation date
 var now = new Date().getTime();
 var t = deadline - now;
-var days = Math.floor(t/(1000 * 60 * 60 * 24));
+var days = Math.ceil(t/(1000 * 60 * 60 * 24)); // round up on the date b/c it counts the time by millis (ex. Sept 30, 11:59:59 = 1000 millis until Oct, but displays 1 full day)
+if(days < 0) days+=365; //after graduation, start counting down to next year (dont display negative)
 document.getElementById("counterdays").innerHTML = days + " Days Left!";
-if(t==0){
-t=t+365
-}
