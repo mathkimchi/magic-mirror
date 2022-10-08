@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Cross Country - Boys' and Girls' Varsity
 BEGIN:VEVENT
 UID:85102@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART:20220901T173000
 SUMMARY:Cross Country - Boys' and Girls' Varsity - West Windsor-Plainsboro North & Notre Dame High School (pre season athletes) (Away)
 DESCRIPTION:
@@ -14,7 +14,7 @@ PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:85770@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART;VALUE=DATE:20220907
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Off campus practice
 DESCRIPTION:
@@ -22,7 +22,7 @@ PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:86028@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART;VALUE=DATE:20220914
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Off campus practice
 DESCRIPTION:
@@ -30,7 +30,7 @@ PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:86338@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART:20220917T113000
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Robbinsville High School Invitational  - Night at the Nest (varsity and junior varsity) results\, click details (Away)
 DESCRIPTION:
@@ -39,50 +39,58 @@ PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:86342@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART;VALUE=DATE:20220921
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Off campus practice
 DESCRIPTION:
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:86341@www.peddie.org
-DTSTAMP:20220921T154903Z
+UID:86674@www.peddie.org
+DTSTAMP:20220930T165404Z
 DTSTART:20220924T150000
-SUMMARY:Cross Country - Boys' and Girls' Varsity - Jerry Hart Cross Country Memorial Invitational (all levels)  race times under details (Home)
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Jerry Hart Cross Country Memorial Invitational (all levels)  race times & results under details (Home)
 DESCRIPTION:
 LOCATION:Peddie Golf Course
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:86358@www.peddie.org
-DTSTAMP:20220921T154903Z
+UID:86675@www.peddie.org
+DTSTAMP:20220930T165404Z
 DTSTART;VALUE=DATE:20220927
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Off campus practice
 DESCRIPTION:
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:86057@www.peddie.org
-DTSTAMP:20220921T154903Z
-DTSTART;VALUE=DATE:20221001
-SUMMARY:Cross Country - Boys' and Girls' Varsity - Shore Coaches Invitational (Away)
+UID:86676@www.peddie.org
+DTSTAMP:20220930T165404Z
+DTSTART;VALUE=DATE:20220928
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Off campus practice
+DESCRIPTION:
+PRIORITY:0
+END:VEVENT
+BEGIN:VEVENT
+UID:86686@www.peddie.org
+DTSTAMP:20220930T165404Z
+DTSTART:20221001T090000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - Shore Coaches Invitational (race times under details) (Away)
 DESCRIPTION:
 LOCATION:Holmdel Park
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:86356@www.peddie.org
-DTSTAMP:20220921T154903Z
+UID:86821@www.peddie.org
+DTSTAMP:20220930T165404Z
 DTSTART:20221007T164500
-SUMMARY:Cross Country - Boys' and Girls' Varsity - The Hill School (all levels) Girls race 4:45 pm - Boys race 5:30 pm CHANGED:New date\, was originally scheduled on 10/09/22 (Away)
+SUMMARY:Cross Country - Boys' and Girls' Varsity - The Hill School (all levels) Girls race 4:45 pm - Boys race 5:30 pm CHANGED:New date\, was originally scheduled on 10/08/22 (Away)
 DESCRIPTION:
 LOCATION:The Hill School
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:83839@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART:20221015T140000
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Lawrenceville School (all levels) (Home)
 DESCRIPTION:
@@ -90,17 +98,17 @@ LOCATION:Peddie Golf Course
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:84637@www.peddie.org
-DTSTAMP:20220921T154903Z
+UID:86680@www.peddie.org
+DTSTAMP:20220930T165404Z
 DTSTART:20221020T160000
-SUMMARY:Cross Country - Boys' and Girls' Varsity - MCTA Championships (varsity\, tentative date)) (Away)
+SUMMARY:Cross Country - Boys' and Girls' Varsity - MCTA Championships (varsity) (Away)
 DESCRIPTION:
 LOCATION:Thompson Park
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:85061@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART:20221022T140000
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Mercer Track Coaches JV Cross Country Invitational (junior varsity and freshman\, full race schedule under details tab) (Away)
 DESCRIPTION:
@@ -108,26 +116,26 @@ LOCATION:Robbinsville High School
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:83834@www.peddie.org
-DTSTAMP:20220921T154903Z
+UID:86819@www.peddie.org
+DTSTAMP:20220930T165404Z
 DTSTART:20221026T133000
-SUMMARY:Cross Country - Boys' and Girls' Varsity - MAPL Championships (varsity\, rain date 10/27) (Home)
+SUMMARY:Cross Country - Boys' and Girls' Varsity - MAPL Championships (Varsity and JV\, rain date 10/27) (Home)
 DESCRIPTION:
 LOCATION:Peddie Golf Course
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
-UID:86349@www.peddie.org
-DTSTAMP:20220921T154903Z
-DTSTART:20221101T130000
-SUMMARY:Cross Country - Boys' and Girls' Varsity - NJISAA Prep A & B Championships (varsity) CHANGED:New date\, was originally scheduled on 11/2 (Away)
+UID:86662@www.peddie.org
+DTSTAMP:20220930T165404Z
+DTSTART:20221101T140000
+SUMMARY:Cross Country - Boys' and Girls' Varsity - NJISAA Prep A & B Championships (varsity) race times under details CHANGED:New date\, was originally scheduled on 11/2 (Away)
 DESCRIPTION:
 LOCATION:Blair Academy
 PRIORITY:0
 END:VEVENT
 BEGIN:VEVENT
 UID:83841@www.peddie.org
-DTSTAMP:20220921T154903Z
+DTSTAMP:20220930T165404Z
 DTSTART:20221105T144500
 SUMMARY:Cross Country - Boys' and Girls' Varsity - Blair Academy (all levels) (Home)
 DESCRIPTION:
