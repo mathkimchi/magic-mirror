@@ -18,3 +18,5 @@ dates=dates.replace('08','8').strip()
 dates=dates.replace('09','9').strip()
 file1.write(dates)
 file1.close()
+
+print(__file__) #print after program is run (for debugging in webmin)

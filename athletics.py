@@ -25,7 +25,7 @@ file1 = open("athletics.txt", "w")
 
 
 def findCalendar(textFile):
-    g = open(textFile, "rb")
+    g = open("Calendars\\"+textFile, "rb")
     gcal = Calendar.from_ical(g.read())
 
     for component in gcal.walk():
@@ -98,4 +98,5 @@ findCalendar("team_192_gmt.ics")
 findCalendar("team_194_gmt.ics")
 
 file1.close()
-    
+
+print(__file__) #print after program is run (for debugging in webmin)    

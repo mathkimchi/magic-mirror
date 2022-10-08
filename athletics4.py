@@ -8,3 +8,5 @@ with open('athletics3.txt', 'r') as f:
         else:
             break
 file1.close()
+
+print(__file__) #print after program is run (for debugging in webmin)
