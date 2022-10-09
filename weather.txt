@@ -1,2 +1,2 @@
-Currently: Fog
-Temperature now: 46
+Currently: Clear
+Temperature now: 44
