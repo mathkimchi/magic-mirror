@@ -18,10 +18,10 @@ var imgElem = document.getElementById('image_1');
   if (14<=hour && hour<16) block = "C"
   console.log(today+" "+time+"-"+day+block)
   if(day=="" || block=="") {
-    imgElem.src = 'ExamSchedule/examSchedule.png';
+    imgElem.src = 'ExamSchedule/examSchedule.PNG';
   }
   else{
-    imgElem.src = 'ExamSchedule/' + day + block + '.png';
+    imgElem.src = 'ExamSchedule/' + day + block + '.PNG';
   }
   if (hour == 8 && minutes == 0 && seconds ==0 ) {
     window.location.reload();
