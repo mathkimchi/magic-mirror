@@ -18,7 +18,7 @@ var imgElem = document.getElementById('image_1');
   if (14<=hour && hour<16) block = "C"
   console.log(today+" "+time+"-"+day+block)
   if(day=="" || block=="") {
-    imgElem.src = 'ExamSchedule/dailyschedule.png';
+    imgElem.src = 'ExamSchedule/examSchedule.png';
   }
   else{
     imgElem.src = 'ExamSchedule/' + day + block + '.png';
