@@ -16,6 +16,7 @@ dates=dates.replace('06','6').strip()
 dates=dates.replace('07','7').strip()
 dates=dates.replace('08','8').strip()
 dates=dates.replace('09','9').strip()
+dates=dates.replace('13','1').strip()
 file1.write(dates)
 file1.close()
 

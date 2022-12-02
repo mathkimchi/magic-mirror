@@ -42,6 +42,8 @@ def findCalendar(textFile):
                 
             ):
                 #read the summary, location, and home/away and add it to athletics.txt
+                if(todayMonth == "12" and startTimeString1 == "01"): startTimeString1 = "13"
+                
                 menu = component.get("summary")
                 menu2 = component.get("location") # never used?
                 if menu.find("Away") > 0 or menu.find("Home") > 0: #if the event is labeled home or away, save it
