@@ -188,6 +188,23 @@ display: inline-flex;
 text-align: left;
 vertical-align: top;
 }
+
+.athletics::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px; /* Adjust the value to control the overhang */
+  width: 20px; /* Adjust the value to control the overhang */
+  height: 100%;
+  background-color: #f0f0f0; /* Adjust the background color as desired */
+  z-index: -1;
+}
+
+/* To prevent overhanging indent on lines after newline (\n) */
+.athletics::after {
+  content: "\00a0"; /* Non-breaking space */
+  white-space: pre;
+}
 /*the calendar class is used to style the text in the calendar2.txt  */
 .calendar{
 color:white;
