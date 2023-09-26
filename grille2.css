@@ -99,6 +99,12 @@ display: inline;
   font-size: 24px;
   margin-bottom: 0px;
 }
+.grid-container p{
+  color:#cc9800;
+  font-family: 'Brandon Grotesque';
+  font-size: 24px;
+  margin-bottom: 0px;
+}
 /*this just specifies how we want the elements in our grid to be styled*/
 .grid-item {
   color:#cc9800;
