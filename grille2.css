@@ -177,6 +177,9 @@ display: inline-flex;
 text-align:left;
 }
 /*the athletics class is used to style the text in the athletics4.txt  */
+.athletics-schedule{
+  max-width: 30%;
+}
 .athletics{
  color:white;
 font-size:7.5px;
