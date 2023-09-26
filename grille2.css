@@ -321,14 +321,14 @@ margin-left: 25px;
 .school-img {
   height: 200px;
 }
-/* grid for Blair-Day athletic events display */
+
+/* display schedulel */
 .schedule-grid {
   display: grid;
-  grid-gap:1px;
+  /* grid-gap:1px;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff; */
 }
-
 .schedule-grid > p{
   display:flex;
   align-items:center;
