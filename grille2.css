@@ -96,6 +96,7 @@ h4 {
 /* Grid container used forthe scores */
 .grid-container {
   display: grid;
+  grid-template-columns: 30% auto;
 }
 
 /* Grid container used for the main body */
@@ -202,7 +203,7 @@ h4 {
 
 /*the athletics class is used to style the text in the athletics4.txt  */
 .athletics-schedule {
-  max-width: 30%;
+  max-width: 100%;
 }
 
 .athletics {
@@ -415,4 +416,11 @@ h4 {
   font-family: 'Brandon Grotesque';
   text-align: center;
   font-size: 12px;
+}
+
+
+/*the athletics class is used to style the text in the athletics4.txt  */
+.daily-dose {
+  max-width: 60%;
+  margin: auto;
 }
