@@ -10,7 +10,7 @@ from email.header import decode_header
 from bs4 import BeautifulSoup
 
 # Load credentials from secure.json
-with open('../secure.json', 'r') as json_file:
+with open('secure.json', 'r') as json_file:
     credentials = json.load(json_file)
 
 user = credentials['email']['username']
@@ -90,7 +90,16 @@ for email_id in email_ids[-1:]: #change to [-n:] for most recent n emails
     plain_text = get_plain_text(email_message)
     # print(plain_text)
     
-    print(get_body_html(email_message))
+    body_html = get_body_html(email_message)
+
+
+    # Save content to file with UTF-8 encoding
+    with open('dailyDose.txt', 'w', encoding='utf-8') as file:
+        file.write(plain_text)
+        file.close()
+    with open('dailyDose.html', 'w', encoding='utf-8') as file:
+        file.write(body_html)
+        file.close()
 
 # Close the connection
 con.logout()
