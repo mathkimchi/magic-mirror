@@ -10,7 +10,7 @@ from email.header import decode_header
 from bs4 import BeautifulSoup
 
 # Load credentials from secure.json
-with open('secure.json', 'r') as json_file:
+with open('../secure.json', 'r') as json_file:
     credentials = json.load(json_file)
 
 user = credentials['email']['username']
