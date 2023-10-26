@@ -1,3 +1,4 @@
+#Run Magic Mirror scripts
 
 # Load athletics calendar
 python3 athletics0.py
