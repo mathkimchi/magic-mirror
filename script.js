@@ -25,6 +25,18 @@ fetch("calendar2.txt")
   })
   .then(text => document.getElementById("portfolio-code4").innerText = text)
   .catch(errror => document.getElementById("portfolio-code4").innerText = "Unable to fetch portfolio, try again later")
+// fetch("weather.txt")
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error("Bad Response")
+//     }
+//     return response.text()
+//   })
+//   .then(function(text){
+//     document.getElementById("portfolio-code5temp").innerText = text.split("\n")[0]
+//     document.getElementById("portfolio-code5").innerText = text.substring(text.split("\n")[0].length+1)
+//   })
+//   .catch(error => document.getElementById("portfolio-code5").innerText = "Unable to fetch portfolio, try again later")
 fetch("weather.txt")
   .then(response => {
     if (!response.ok) {
