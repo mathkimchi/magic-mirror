@@ -15,3 +15,28 @@ To avoid this, run `python3 -m http.server`.
 
 The only visual change right now is changing the dates from `4/5` to `Apr 5`, as well as the order possibly changing if two events have the same date.
 Ex: `4/16: Golf - Junior Varsity Boys vs. The Hun School of Princeton CHANGED:New location: was originally scheduled at Hun (Home)` to `Apr 16: Golf - Junior Varsity Boys vs. The Hun School of Princeton CHANGED:New location, was originally scheduled at Hun (Home)`.
+
+### Dates
+
+2024/4/14
+
+
+It is long weekend right now, and the upcoming events is empty.
+
+I feel like it should not be empty even if it is long weekend.
+
+In calendar1.py, it decides whether the event should be listed based off:
+``` python
+if (
+    startTimeString1 == todayMonth
+    and startTimeString2 >= nextDay
+    or startTimeString1 == nextMonth2
+    and startTimeString2 <= actualDay
+):
+```
+First of all, regardless of if this is interpreted the way it was intended to be interpreted, I feel like there should still be parentheses just so other coders can understand it.
+
+I see that the previous maintainers imported relativedelta but didn't utilize it fully so I will just use it.
+I will create a new python file to take care of the time stuff.
+
+It turns out that the problem was that there are no events past march in the calendar, which is kind of weird. I will ask Tomaz about it.

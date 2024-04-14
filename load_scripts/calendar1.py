@@ -4,7 +4,9 @@ from pytz import UTC  # timezone
 from datetime import date
 from datetime import datetime
 import datetime
-from dateutil import relativedelta
+from dateutil.relativedelta import relativedelta
+from utils import time_to_int, is_event_relevant
+
 
 # Returns the current local date
 todayDate = date.today()
@@ -12,7 +14,7 @@ todayMonth = str(todayDate)
 todayMonth = todayMonth[5:7]
 todayDay = str(todayDate)
 todayDay = todayDay[8:]
-nextMonth = datetime.date.today() + relativedelta.relativedelta(months=1)
+nextMonth = datetime.date.today() + relativedelta(months=1)
 nextMonth2 = str(nextMonth)
 nextMonth2 = nextMonth2[5:7]
 nextDay = str(nextMonth)
@@ -33,12 +35,7 @@ def findCalendar(textFile):
             startTimeString = startTime.decode("utf-8")
             startTimeString1 = startTimeString[4:6]
             startTimeString2 = startTimeString[6:8]
-            if (
-                startTimeString1 == todayMonth
-                and startTimeString2 >= nextDay
-                or startTimeString1 == nextMonth2
-                and startTimeString2 <= actualDay
-            ):
+            if is_event_relevant(component):
                 menu = component.get("summary")
                 menu2 = component.get("location")
 

@@ -2,45 +2,9 @@ import requests
 from icalendar import Calendar, Event
 from datetime import date
 import datetime
-from dateutil import relativedelta
+from dateutil.relativedelta import relativedelta
 import json
-
-
-todayDate = date.today()
-todayMonth = str(todayDate)
-todayMonth = todayMonth[5:7]
-todayDay = str(todayDate)
-todayDay = todayDay[8:]
-nextMonth = datetime.date.today() + relativedelta.relativedelta(months=1)
-nextMonth2 = str(nextMonth)
-nextMonth2 = nextMonth2[5:7]
-nextDay = str(nextMonth)
-nextDay = nextDay[8:]
-actualDay = date.today().day
-actualDay = str(actualDay)
-todayMonth2 = todayDate.strftime("%B")
-nextMonth3 = nextMonth.strftime("%B")
-
-
-def time_to_int(time_to_convert: datetime.datetime | date | Event) -> int:
-    # Ex: "2024-04-17 16:00:00" would become the integer 20240417160000
-    # A useful property is the ordering of this
-    if type(time_to_convert) == datetime.datetime or type(time_to_convert) == date:
-        return int(time_to_convert.strftime("%Y%m%d%H%M%S"))
-    elif type(time_to_convert) == Event:
-        time_to_convert_datetime: datetime.datetime | date = time_to_convert.decoded("dtstart")  # type: ignore
-        return time_to_int(time_to_convert_datetime)
-    raise TypeError(f"{time_to_convert} has type: {type(time_to_convert)}")
-
-
-def is_event_relevant(event: Event) -> bool:
-    startTime = event.get("DTSTART").to_ical()
-    startTimeString = startTime.decode("utf-8")
-    startTimeString1 = startTimeString[4:6]
-    startTimeString2 = startTimeString[6:8]
-    return (  # this month and after today, or next month
-        startTimeString1 == todayMonth and startTimeString2 >= nextDay
-    ) or startTimeString1 == nextMonth2
+from utils import time_to_int, is_event_relevant
 
 
 def load_events_by_team() -> None:
