@@ -4,27 +4,25 @@ import json
 from utils import time_to_int, is_event_relevant
 
 
-def load_events_by_team() -> None:
-    for x in range(154, 195):  # TODO: figure out why 154-195
-        url = "https://www.peddie.org/calendar/team_" + str(x) + ".ics"  # get url name
-        r = requests.get(url, allow_redirects=True)  # get file at url
+def load_academic_calendar() -> None:
+    url = "https://www.peddie.org/cf_calendar/feed.cfm?type=ical&feedID=BBE7895D1B534E909AE3196015AF8E47"
+    r = requests.get(url, allow_redirects=True)
 
-        with open("data/teamwise_calendars/team_" + str(x) + "_gmt.ics", "wb+") as file:
-            # using the `with` syntax should handle closing
-            file.write(r.content)
+    with open("data/academic_calendar.ics", "wb+") as file:
+        # using the `with` syntax should handle closing
+        file.write(r.content)
 
 
 def get_relevant_events() -> list[Event]:
     events: list[Event] = []
 
-    for x in range(154, 195):  # TODO: figure out why 154-195
-        with open("data/teamwise_calendars/team_" + str(x) + "_gmt.ics", "r") as file:
-            # using the `with` syntax should handle closing
-            calendar: Calendar = Calendar.from_ical(file.read())
+    with open("data/academic_calendar.ics", "r") as file:
+        # using the `with` syntax should handle closing
+        calendar: Calendar = Calendar.from_ical(file.read())
 
-            for event in calendar.walk("VEVENT"):
-                if is_event_relevant(event):
-                    events.append(event)
+        for event in calendar.walk("VEVENT"):
+            if is_event_relevant(event):
+                events.append(event)
 
     return events
 
@@ -54,11 +52,11 @@ def save_events(events: list[Event]):
     events = events[: min(17, len(events))]
 
     event_dict_list = [event_to_dict(event) for event in events]
-    with open("data/relevant_athletic_events.json", "w") as file:
+    with open("data/relevant_academic_events.json", "w") as file:
         events_json_str = json.dumps(event_dict_list, indent=4)
         file.write(events_json_str)
 
-    with open("data/relevant_athletic_events.txt", "w") as file:
+    with open("data/relevant_academic_events.txt", "w") as file:
         str_formatted_events = "\n".join([event["formatted str"] for event in event_dict_list])  # type: ignore
         file.write(str_formatted_events)
 
@@ -68,9 +66,9 @@ if __name__ == "__main__":
         print(f'Running: "{__file__}"...')
 
         # If loading has been done already, then this is optional
-        print("Loading and saving events by team...")
-        events = load_events_by_team()
-        print("Finished loading and saving events by team.")
+        print("Loading and saving academic events...")
+        events = load_academic_calendar()
+        print("Finished loading and saving academic events.")
 
         print("Getting relevant events...")
         events = get_relevant_events()

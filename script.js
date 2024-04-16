@@ -16,7 +16,7 @@ fetch("data/relevant_athletic_events.txt")
     })
     .then(text => document.getElementById("portfolio-code3").innerText = text)
     .catch(errror => document.getElementById("portfolio-code3").innerText = "Unable to fetch portfolio, try again later")
-fetch("calendar2.txt")
+fetch("data/relevant_academic_events.txt")
     .then(response => {
         if (!response.ok) {
             throw new Error("Bad Response")

@@ -7,8 +7,7 @@ mkdir data/teamwise_calendars
 python3 load_scripts/load_athletic_calendar.py
 
 # Load calendar events
-python3 load_scripts/calendar1.py
-python3 load_scripts/calendar2.py
+python3 load_scripts/load_academic_calendar.py
 
 # Load Menu
 python3 load_scripts/menu.py

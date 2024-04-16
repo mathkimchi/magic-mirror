@@ -40,3 +40,11 @@ I see that the previous maintainers imported relativedelta but didn't utilize it
 I will create a new python file to take care of the time stuff.
 
 It turns out that the problem was that there are no events past march in the calendar, which is kind of weird. I will ask Tomaz about it.
+
+### Academic Calendar
+
+2024/4/16
+
+The calendar is outdated, so I made a python script to fetch the calendar.
+
+I am going to mergy calendar1.py and calendar2.py into one, and I am going to use more or less the same code from the athletic calendar.
