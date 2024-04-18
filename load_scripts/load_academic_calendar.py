@@ -13,7 +13,7 @@ def load_academic_calendar() -> None:
         file.write(r.content)
 
 
-def get_relevant_events() -> list[Event]:
+def get_relevant_events() -> "list[Event]":
     events: list[Event] = []
 
     with open("data/academic_calendar.ics", "r") as file:
@@ -27,7 +27,7 @@ def get_relevant_events() -> list[Event]:
     return events
 
 
-def event_to_dict(event: Event) -> dict[str, object]:
+def event_to_dict(event: Event) -> "dict[str, object]":
     event_dict = {}
 
     event_dict["time int"] = time_to_int(event)
@@ -44,7 +44,7 @@ def event_to_dict(event: Event) -> dict[str, object]:
     return event_dict
 
 
-def save_events(events: list[Event]):
+def save_events(events: "list[Event]"):
     # sort events from soonest to furthest
     events.sort(key=lambda event: time_to_int(event))
 
