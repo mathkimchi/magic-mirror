@@ -48,3 +48,18 @@ It turns out that the problem was that there are no events past march in the cal
 The calendar is outdated, so I made a python script to fetch the calendar.
 
 I am going to mergy calendar1.py and calendar2.py into one, and I am going to use more or less the same code from the athletic calendar.
+
+### Small Changes
+
+2024/4/22
+
+Note: deleted tech lab, and the mm on techlab just displays index.html now.
+
+Added meta tag to disable caching.
+
+```html
+<!-- the following 3 tags should all do the same thing: disable cache -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+```
